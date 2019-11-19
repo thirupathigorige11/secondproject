@@ -1,0 +1,165 @@
+/*top nav for responsive*/
+.top_nav{
+ position: fixed;
+    width: 100%;
+    z-index: 9;
+ 
+}
+
+/*scroll bar for side menu*/
+/* .nav-sm ul.nav.child_menu {
+    height: auto !important;
+    max-height: 200px !important;
+    overflow-y: auto !important;
+} */
+ @media only screen and (min-width:768px){
+ .main_menu_scroll{
+	height: calc(100% - 10px) !important;
+    overflow-y: auto !important;
+     overflow-x: hidden !important; 
+}
+ .nav-sm .main_menu_scroll{
+	height: calc(100% - 10px) !important;
+	overflow-y: inherit !important;
+	overflow-x: inherit !important;
+   /*  overflow-y: auto !important;
+     overflow-x: hidden !important;  */
+}
+/* .child_menu{max-height:200px; overflow:auto;height:auto;} */
+.child_menu::-webkit-scrollbar {
+    width: 10px;
+       background-color: #ff9016;
+}
+
+.child_menu::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,1); 
+    /* border-radius: 10px; */
+}
+
+.child_menu::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,1); 
+    background-color:#ef7e2d;
+}
+/*******/
+.main_menu_scroll::-webkit-scrollbar {
+    width: 10px;
+       background-color: #fff;
+}
+
+.main_menu_scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,1); 
+    /* border-radius: 10px; */
+}
+
+.main_menu_scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,1); 
+    background-color:#ff9016;
+}  
+	
+}
+
+/*  .nav-sm ul.nav.child_menu{
+    overflow-x: hidden !important;
+    max-height:200px !important;
+}  */
+.nav-sm ul.nav.child_menu::-webkit-scrollbar {
+    width: 8px;
+     background-color: #ff9016;
+}
+
+.nav-sm ul.nav.child_menu::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,1); 
+   /*  border-radius: 10px; */
+}
+
+.nav-sm ul.nav.child_menu::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,1); 
+     -moz-box-shadow: inset 0 0 2px rgba(0,0,0,1);
+    background-color:#ef7e2d;
+} 
+/*scroll bar for side menu*/
+.nav-md .container.body .col-md-3.left_col {
+    position: fixed;
+}
+/*top nav for responsive*/
+/*sidebar responsive*/
+.nav-md .container.body .right_col {
+    padding: 100px 20px 0px !important;
+    background: #fff;
+}
+.left_col {
+    /* overflow-x: hidden; */
+    overflow-y: auto;
+    /* margin-bottom: 50px; */
+    width: 100%;
+    height:100%;
+    display: table;
+}
+/* .left_col{
+ overflow-x:hidden;
+ overflow-y:auto;
+ margin-bottom:50px;
+ width:100%;
+} */
+.left_col-resp{
+ margin-bottom:50px;
+ width:100%;
+}
+@media only screen and (min-width:320px) and (max-width:767px){
+ .nav-md .container.body .right_col {
+    padding: 135px 20px 0px !important;
+    background: #fff;
+}
+/* .left_col {
+    background: #5ea6e4;
+    width: 100%;
+    position: fixed;
+   overflow-y: auto !important;
+} */
+.left_col {
+    background: #ef7e2d;
+    width: 100%;
+   /*  position: fixed; */
+   overflow-y: auto !important;
+   display:table;
+}
+.nav-sm .container.body .col-md-3.left_col {
+    top: 65px;
+   /*  position: fixed; */
+}
+} 
+ .left_col::-webkit-scrollbar { 
+    display: none; 
+} 
+/*sidebar responsive*/
+/*side bar for mobile view*/
+@media only screen and (min-width:320px) and (max-width:768px){
+.nav-sm ul.nav.child_menu {
+	max-height: 200px;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* min-height: 200px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden; */}
+    .nav-sm .container.body .right_col {
+    padding: 10px 20px;
+    margin-left: 40px !important;
+    z-index: 2;
+    background: #fff;
+}
+}
+@media only screen and (min-width:768px) and (max-width:1023px){
+.nav-md .container.body .right_col {
+    padding: 100px 20px 0px !important;
+    background: #fff;
+}
+.navbar-left{width:250px;}
+}
+@media only screen and (min-width:1024px) and (max-width:1200px){.navbar-left{width:250px;}}
+/*side bar for mobile view*/
+.nav.side-menu>li>a {padding: 18px 10px 12px !important;}

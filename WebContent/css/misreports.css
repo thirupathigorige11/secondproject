@@ -1,0 +1,31 @@
+ .chexkbox_site{ 
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  float:left;
+  }
+  .checkbox_sitelabel{
+   padding-left: 15px;
+   margin-top: 8px;
+   float: left;
+   font-size: 15px;
+   }
+   .dataTables_wrapper .dataTables_filter input {
+    margin-left: 0.5em;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.dataTables_scrollBody{margin-top:-2px;}
+table.dataTable {border-collapse: collapse !important;}
+.table-fixed-header{border:1px solid #000;}
+.table-fixed-header thead tr th{border: 1px solid #000;background-color:#ccc;}
+.table-fixed-header tbody tr td{border:1px solid #000 !important;}
+.totalAmount{font-size:18px;}
+.totalAmounts{font-size:18px;color:#f0ad4e;}
+ a {color: #2f88d4;text-decoration: none;font-weight: bold;}
+ .dataTables_wrapper.no-footer .dataTables_scrollBody{border-bottom:0px !important;}
+ 
+ 

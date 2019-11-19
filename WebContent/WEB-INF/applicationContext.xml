@@ -1,0 +1,76 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:lang="http://www.springframework.org/schema/lang"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+        http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+	<!-- Root Context: defines shared resources visible to all other web components -->
+
+	<!-- Create DataSource Bean -->
+	<!-- <property name="jndiName" value="java:comp/env/jdbc/snapwork" /> -->
+	<!-- <property name="jndiName" value="java:comp/env/jdbc/iMobileDS" /> -->
+	<!-- <property name="jndiName" value="jdbc/iMobileDS" /> -->
+	<!-- Local:java:comp/env/jdbc/snapwork -->
+	<!-- <jee:jndi-lookup id="dbDataSource" jndi-name="jdbc/DatabaseName" expected-type="javax.sql.DataSource" 
+		/> -->
+
+	<tx:annotation-driven proxy-target-class="true"
+		transaction-manager="transactionManager" />
+
+	<!-- Creating TransactionManager Bean, since JDBC we are creating of type 
+		DataSourceTransactionManager -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<bean id="namedParameterJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
+		<constructor-arg ref="dataSource" />
+	</bean>
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<constructor-arg ref="dataSource" />
+	</bean>
+
+	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean"
+		lazy-init="true">
+		<property name="jndiName" value="java:comp/env/jdbc/Sumadhura" />
+	</bean>
+
+
+	<bean name="schedularDao" class="com.sumadhura.transdao.SchedulerDao">
+		<constructor-arg ref="transactionManager"> </constructor-arg>
+			<constructor-arg ref="jdbcTemplate"> </constructor-arg>
+	</bean>
+	
+	
+	<bean name="objIndentCreationApprovalEmailFunction" class="com.sumadhura.service.IndentCreationApprovalEmailFunction">
+       <constructor-arg ref="jdbcTemplate"> </constructor-arg>
+	</bean>
+	
+	<bean name="purchaseDeptIndentrocessDao1" class="com.sumadhura.transdao.PurchaseDepartmentIndentProcessDaoImpl">
+       <property name="jdbcTemplate" ref="jdbcTemplate"></property>
+	</bean>
+	
+	<bean name="objPaymentCreationApprovalEmailFunction" class="com.sumadhura.service.PaymentCreationApprovalEmailFunction">
+       <constructor-arg ref="jdbcTemplate"> </constructor-arg>
+	</bean>
+
+
+   <bean name="objExcelUploadProductsReceiveIssueService" class="com.sumadhura.service.ExcelUploadProductsReceiveIssueService">
+        <constructor-arg ref="objExcelUploadProductsReceiveIssueDao"> </constructor-arg>
+        <constructor-arg ref="transactionManager"> </constructor-arg>
+	</bean>
+	
+	<bean name="objExcelUploadProductsReceiveIssueDao" class="com.sumadhura.transdao.ExcelUploadProductsReceiveIssueDao">
+       <constructor-arg ref="jdbcTemplate"> </constructor-arg>
+	</bean>
+</beans>

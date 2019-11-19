@@ -1,0 +1,11 @@
+/* author : Madhu Tokala*/
+
+@charset "utf-8";
+/* CSS Document */
+
+.error {
+    color: red; display:block; padding-top:5px; font-size: 12px;
+}
+.success {
+    color: #5e9641;; display:block; padding-top:5px; font-size: 12px;
+}

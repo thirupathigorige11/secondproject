@@ -1,0 +1,876 @@
+@font-face {
+    font-family: 'robotomedium';
+    src:url('fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotobold';
+    src:url('fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotolight';
+    src:url('fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+    /* side-bar  */
+	 .fa-chevron-down{
+		 color:#fff !important;
+	 }
+
+
+/* first header  */
+.nav_title1{
+	margin-left:-17%;
+	z-index:10;
+}
+.nav-sm .nav.side-menu li a .notification {
+    font-size: 10px !important;
+    height: 18px !important;
+    margin-bottom: 5px;
+    position: absolute;
+    right: 14px;
+    text-align: center;
+    top: 15px;
+    width: 18px !important;
+}
+
+.navbar-left {
+    float: left;
+	display:inline-flex;
+	padding-top:16px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	padding-bottom: 14px;
+}
+
+/*  top nav fixed  */
+.nav-md .container.body .col-md-3.left_col{
+	top:82px;
+	    height: 100%;
+    min-height: 346px;
+}
+.main_container .top_nav {
+    margin-left: 0 !important;
+}
+.nav-sm .container.body .col-md-3.left_col {
+	top:65px;
+}
+.nav-sm span.fa4 {
+    display: none;
+}
+.nav-sm span.fa5 {
+    display: inline;
+}
+.nav-md span.fa5{
+	display: none;
+}
+.fa5{
+	margin-top: -35px !important;
+    width: 6px !important;
+}
+.fa3{
+	display:none;
+}
+.news{
+	font-size:15px;
+	color:#ef7e2d;
+	margin-left:4px;
+	font-family:'robotomedium';
+}
+.play{
+	font-size:25px !important;
+	padding-top:5px;
+	padding-bottom:13px;
+}
+.play .badge{
+	margin-left: -15px;
+    margin-top: -15px;
+    margin-right: -1px;
+    background: #e64a19;
+}
+.navbar-nav {
+    margin:0 !important;
+}
+/*  media queries    */
+@media (max-width: 1410px){
+	.fa2{
+    /*display: none;*/
+}
+}
+
+ @media (max-width: 480px) {
+	a.user-profile{
+		padding-bottom:20px !important;
+	}
+	 .nav > li > a {
+		padding: 12px 4px 7px;
+	}
+	.toggle .badge{
+		margin-right:-1px;
+	}
+	.fa1{
+		margin-right:5px !important;
+	}
+	.loginbox{
+		max-width:290px !important;
+		font-size:11px !important;
+	}
+}
+ @media (max-width: 1023px) {
+	 .nav_title{
+		 width:85px;
+	 }
+	 .site_title{
+		 margin-left:5px !important;
+	 }
+	 
+ }
+@media (min-width: 600px) and (max-width: 640px) {
+	.nav > li > a {
+    padding: 5px 15px ;
+	}
+}
+@media (min-width:575px)
+{
+	.top_nav li a i{font-size:20px;}
+	.fa2{
+		margin-left:6px;
+		font-size:13px;
+		padding-top: 5px;
+}
+.loginbox{
+		margin-left:30% !important;
+	}
+}
+ 
+.breadcrumb{
+	background:#fff;
+}
+.breadcrumb li a{
+	color:#ef7e2d;
+}
+.breadcrumb>li+li:before{
+	content:"\276F" !important;
+}
+.toggle .badge{
+	min-height:40px;
+	min-width:40px;
+	border-radius:50px;
+	background-color:#ef7e2d;
+}
+.fa1{
+	color:#f66722;
+	margin-right:15px;
+	margin-top:5px;
+}
+/********* login page **********/
+.loginbody{
+	background:url("../images/login.jpg") center no-repeat;
+	background-size: cover;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.loginbox{
+	max-width:345px;
+	width:100%;
+	text-align:center;
+	color:#fff;
+	font-family:'robotomedium';
+	font-size:14px;
+	margin-left:0;
+}
+.loginbox img{
+	margin-bottom:40px;
+}
+.loginbox .form-control{
+	border-radius:0;
+	height:45px;
+	color:#000;
+}
+.loginbox .form-group{
+	margin-bottom:30px;
+}
+.loginbox button,.loginbox button:hover{
+	background:#fe9d2b;
+	border:1px solid #fe9d2b;
+	color:#fff !important;
+	font-family:'robotobold';
+}
+.loginbox .checkbox-custom-label{
+	font-weight:normal;
+}
+
+.loginbox input[type="checkbox"] {
+  display: none;
+}
+.loginbox label {
+  cursor: pointer;
+}
+.loginbox input[type="checkbox"] + label:before {
+  border: 1px solid #fff;
+  content: "\00a0";
+  display: inline-block;
+  height: 16px;
+  margin: 0 .25em 0 0;
+  padding: 0;
+  vertical-align: top;
+  width: 16px;
+}
+.loginbox input[type="checkbox"]:checked + label:before {
+  background: #fff;
+  color: #333;
+  content: "\2713";
+  text-align: center;
+}
+
+.loginbox a{
+	color:#fff;
+}
+.loginbox i{
+	font-size:16px;
+}
+
+/* .issueal{
+	text-align:left !important;
+	} */
+
+.commlbl{
+	font-weight:500 !important;
+	font-size:16px !important;
+	font-family: Verdana,Arial,sans-serif;
+	
+	}
+	.btnname{
+		font-size:17px;
+		colspan="3";
+	}
+table thead th{
+	
+	
+	}
+
+.tblindent{
+	max-width:70%;
+	float:left;
+}
+.tblindent tbody tr td{
+	border:0;
+	font-size:18px;
+	}
+.tblindent tbody tr td:nth-of-type(3){
+	  padding-left:20px;
+}
+.prodt_tbl{
+	max-width:500px;
+	margin:auto;
+}
+.prodt_tbl tbody tr th,.prodt_tbl tbody tr td{
+	border:0;
+}
+.protbldiv{
+/* 	overflow-y: auto;
+    max-height: 250px; */
+    margin: 0px 10px;
+    /* background: #efefef; */
+    border: solid 1px #d4d4d4;
+}
+.pro-table>thead>tr>th{
+	text-align:center;
+	border-top:1px solid #ddd !important;
+}
+/* .pro-table tbody tr ,.pro-table tbody tr th{
+	margin:2px 3px;
+	width:100%;
+	min-width:213px; 
+}  */
+.pro-table tbody tr td.s-50 input{
+	width:48%;
+	float:left;
+	margin-right: 2%;
+}
+.pro-table tbody tr td:first-child,.pro-table tbody tr th:first-child{
+	min-width:20px;
+}
+.pro-table tbody tr td:last-child,.pro-table tbody tr th:last-child{
+	min-width:190px;
+}
+.pro-table .ui-autocomplete-input{
+	max-width:86%;
+	padding:4px 12px;
+}
+.pro-table tbody tr td .ui-icon-triangle-1-s{
+	display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: -4px;
+    margin-top:-3px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.form-control{
+	height:30px;
+}
+.pro-table select{
+	width:100%;
+	max-width:86%;
+	}
+	
+.tblcharges{
+	float:left;
+}
+.tblcharges tbody tr td{
+	border:0;
+	font-size:18px;
+	vertical-align:middle;
+	width:100px;
+	}
+	.tblcharges tbody tr td:first-child{
+		width:105px;
+		max-width:85px;
+	}
+	.tblchargesbtn{
+	margin:0 10px;
+	}
+	
+.tblprodindissu tbody tr th{
+	text-align:center;
+}
+.tblprodindissu tbody tr td,.tblprodindissu tbody tr th{
+	margin:2px 3px;
+	width:100%;
+	min-width:213px;
+}
+.tblprodindissu tbody tr td.w-70 input{
+	width:42%;
+	float:left;
+	margin-right: 2%;
+}
+.tblprodindissu tbody tr td:first-child,.tblprodindissu tbody tr th:first-child{
+	min-width:20px;
+}
+.tblprodindissu tbody tr td:last-child,.tblprodindissu tbody tr th:last-child{
+	min-width:100px;
+	}
+.tblprodindissu .ui-autocomplete-input{
+	max-width:86%;
+	padding:4px 12px;
+}
+.tblprodindissu tbody tr td .ui-icon-triangle-1-s{
+	display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: -4px;
+    margin-top:-3px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.form-control{
+	height:30px;
+}
+
+
+.tblprodindissudiv{
+	margin-bottom:30px;
+	}
+.tblprodindissudiv thead{
+	dispaly:block;
+	width:calc(100% - 1.1em);
+	}
+.tblprodindissudiv tbody{
+	display:inline-block;
+	max-height:200px;
+	overflow-y: scroll;
+	}
+.tblprodindissu select{
+	width:100%;
+	max-width:86%;
+	}
+	
+.tblindentissunote{
+	float:left;
+}
+.tblindentissunote tbody tr td{
+	border:0;
+	font-size:18px;
+	vertical-align:middle;
+	width:40px;
+	}
+	.tblindentissunote tbody tr td:first-child{
+		width:30px;
+		max-width:10px;
+	}
+	
+	
+	.addvendorfrm{
+	max-width:500px;
+    text-align: left;
+	}
+	.addvendorfrm .custom-combobox{
+		float:left;
+	}
+	.recordtbls{
+		overflow-y:auto;
+		max-height:300px;
+	}
+	.recordtbls table{
+		max-width:500px !important;
+		margin:auto;
+	}
+		.recordtbls1 table{
+		max-width:500px !important;
+		margin:auto;
+	}
+	.pordtxtname{
+		max-width:225px;
+		float:left;
+	}
+	.ui-autocomplete{max-height:200px;overflow-y:scroll !important;}
+	.ui-autocomplete .ui-menu-item{width:175px;padding:3px 5px;}
+	.indentavailselect{
+		max-width:220px;
+	}
+	
+/*.table-fixed tbody {
+  height: 230px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+	*/
+	
+.btnaction{
+	padding:6px 12px;
+	}
+	.divindentiss{
+		/*max-width:700px;*/
+		margin:auto;
+		margin-bottom:20px;
+	}
+	
+	.divindentiss .row{
+	margin-bottom:10px;
+	}
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+	background:#fff !important;
+	}
+	.in_iss_align{
+	max-width:100%;
+	float:left;
+	margin-bottom:50px;
+		}
+	.mb-30{margin-bottom:30px}
+@media (max-width: 768px){
+	.nav_title{
+    	width:20%
+	}
+	.form-horizontal .form-control{
+    	margin-bottom:15px;
+	}
+	.form-group{
+    	margin-bottom:0;
+	}
+	.form-horizontal .form-control, .form-horizontal .control-label {
+	    float: left ;
+	}
+	.form-submit{text-align:left}
+}
+
+.tb_notes{width:100%; max-width:350px;margin-bottom:15px;border:1px solid #ddd;}
+.pt-10{padding-top:10px}
+
+.form-horizontal .form-control, .form-horizontal .control-label {
+    text-align: left !important;
+}
+
+
+@media (max-width: 767px){
+.tblwidth thead th{
+	min-width:130px !important;
+	}
+}
+
+
+.container1 { max-width: 1000px; margin: 1em auto; padding: 1em;}
+.stacktable { width: 100%; }
+.st-head-row { padding-top: 1em;background: #d6d2d2 }
+.st-head-row.st-head-row-main { font-size: 1.5em; padding-top: 0;background: #337ab7;color:white;}
+.st-key { width: 49%; text-align: left; color:black;  }
+.st-val { width: 49%; padding-left: 1%;text-align: left; color:black; scrol}
+
+
+/* RESPONSIVE EXAMPLE */
+
+.st-table { 
+	display: table; 
+	border-color: #5a4d4d;
+	}
+.small-only { display: none; }
+
+
+@media (max-width: 800px) {
+  .st-table{ display: none; }
+  .stacktable.small-only { display: table; }
+  .elements{margin-left: 0px !important;}
+  .dataTables_length{ display: none; }
+  .tblnotification_filter{ display: none; }
+  .dataTables_paginate { display: none; }
+  .dataTables_info{display:none;}
+	#VendorList{ display: none;}
+
+.site_title{
+	    margin-left: 238px;
+	}
+}
+	.tblheaderall{
+	background: rgb(80, 109, 134);
+	color: white;
+	}
+	
+.right_col{
+
+   /*  margin-top: 65px; */
+}
+.loader {
+	display: none; 
+    margin: 0 auto;
+    border: 4px solid black;
+    border-radius: 50%;
+    border-top: 4px solid orange;
+    width: 43px;
+    height: 43px;
+    z-index: 10;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/*custom code for modal popup start */
+@media only screen and (min-width:1200px) and (max-width:1440px){
+     .custom-modal-lg{
+     width:95% !important;
+     height:auto;
+     overflow:hidden;
+     
+     }
+    }
+    
+    .img-adjust{
+    margin-bottom:50px;
+    }
+    .cust-modal-footer{
+     text-align:center !important;
+    padding:7px;
+    }
+    .cust-modal-header{
+     background-color: #ccc;
+    border-radius: 5px 5px 0px 0px;
+    padding:7px;
+    }
+   .cust-modal-body{
+    height:540px;
+    overflow-y:auto;
+    }
+    @media only screen and (min-width:1367px) and (max-width:1500px){
+     .cust-modal-body {
+    height: 650px !important;
+    overflow-y: auto;
+}
+    }
+    .custmodal{
+    top:-30px;
+    }
+    .custom-img{
+ height:20px;
+ width:20px;
+ float:right;
+ margin-right:18px;
+ border:1px solid #000;
+}
+/*css for iframe*/
+    #myframe{
+    height:100vh;
+    width:100%;
+    }
+    /*css for iframe */
+    /*css for payment page loader*/
+   /*  #loader-payment {
+  border: 2px solid #f3f3f3;
+  border-radius: 50%;
+  border-top:2px solid #3498db;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 1s linear infinite; Safari
+  animation: spin 1s linear infinite;
+  top:400px;
+  right:600px;
+  margin:auto;
+  position:absolute;
+} */
+/* loader css */
+@media only screen and (min-width:1300px) and (max-width:1400px){
+	#loadingMessage{
+	display: inline-block;
+  position: absolute;
+  top:58%;
+  left:64%;
+}
+	
+}
+#loadingMessage{
+	display: inline-block;
+  position: absolute;
+  top:58%;
+  left:59%;
+}
+.lds-facebook {
+  display: inline-block;
+  position: absolute;
+  width: 84px;
+  height: 64px;
+  background-color:#ef7e2d;
+  left:58%;
+  top:50%;
+  padding:5px;
+
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 5px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 16px;
+  padding-left:5px;
+  animation-delay: -0.60s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 25px;
+  
+  animation-delay: -0.48s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 35px;
+  
+  animation-delay: -0.36s;
+}
+.lds-facebook div:nth-child(4) {
+  left: 45px;
+  animation-delay: -0.24s;
+  
+}
+.lds-facebook div:nth-child(5) {
+  left: 55px;
+  animation-delay: -0.12s;
+  
+}
+.lds-facebook div:nth-child(6) {
+  left: 65px;
+  animation-delay: 0;
+  
+}
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px;
+  }
+  50%, 100% {
+    top: 19px;
+    height: 26px;
+  }
+}
+/* loader css */
+
+    /*custom code for modal popup start */
+    
+  /*for image full width*/
+  .img-full-width{
+  width:100%;
+  height:auto;
+  }
+  /*image changes in getinvoice table*/
+  .img-table-getinvoice{
+ 
+  width:200px;
+  }
+  /*styles for image hover effect start*/
+ .img-table-getinvoice {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 150px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  
+}
+
+.middle {
+  /* transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; */
+  position:absolute;
+  right:30px;
+  bottom:-10px;
+}
+.container-1{
+	margin-bottom:20px;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.custmodal {
+    top: 0px;
+}
+}
+.check-image{font-size: 15px;
+    border: 1px solid #655252;
+    background-color: #655252;
+    color: #fff;
+}
+#cancel-btn{
+	margin-bottom:20px;
+}
+.thead-color-certificateofpayment tr th{
+	background-color:#ccc;
+	
+	    font-size: 15px;
+}
+.thead-center tr th{
+	text-align:center;
+	background-color:#ccc;
+	font-weight: bold;
+	font-size: 15px;
+}
+.vertical-alignment{vertical-align: middle !important;}
+
+.anchor-invoice{
+	position: absolute;
+	overflow: hidden;
+    word-break: break-word;
+    display: inline-block;
+    text-decoration:underline;
+    color: blue;font-weight: 900;
+    margin-left: 100px;
+    margin-top: 5px;
+    text-decoration:underline;
+    color: blue;
+    font-weight: 900;
+    width:85px;
+}
+
+.page-sendemail{
+		  margin:100px auto;
+		  background-color:#90c7e7;
+		  padding:10px;
+		  border:1px solid #000;
+		  border-radius:5px;
+		  overflow:hidden;
+		  width:800px;
+		 }
+		 @media only screen and (min-width:320px) and (max-width:768px){
+		  .page-sendemail{
+		  margin:100px auto;
+		  background-color:#90c7e7;
+		  padding:10px;
+		  border:1px solid #000;
+		  border-radius:5px;
+		  overflow:hidden;
+		  width:auto;
+		 }
+		 }
+		 .text-resize {
+		 resize:none;
+		 }
+		 /*css for customeremailserviceinput end*/
+		 /*css for work order and show work order*/
+		
+	 .header-modalworkOrder{
+	     background-color: #bdb7ab;
+    border: 1px solid #bdb7ab;
+    color: #fff;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+	 
+	 }
+	 .workorder_modal_text{
+	 border-bottom:2px solid #bdb7ab !important;
+	 border-top:none  !important;
+	 border-left:none  !important;
+	 border-right:none  !important;
+	 border-radius:0px  !important;
+	 margin-bottom:15px !important;
+	 }
+	 .remove-button{
+	 font-size: 12px;
+    padding: 5px 6px;
+	 }
+	 .padd-modal-workorder{
+	 padding-left:30px !important;
+	 padding-right:30px !important;
+	 }
+	 .plus-button{
+	
+    font-size: 12px;
+    padding: 5px 6px;
+	 }
+	 .red{
+	 color:red;
+	 font-size:14px;
+	 font-weight:bold;
+	 }
+	 .margin-close{
+	 margin-top:5px;
+	 text-align: left;
+	 }
+	 .body-modal-workorder{
+	 overflow: hidden;
+    height: 280px;
+    overflow-y: auto;
+	 }
+	 .black{
+	  color:black;
+	 font-size:14px;
+	 font-weight:bold;
+	 }
+	 .control-text{
+	 border:1px solid #ddd !important;
+	 }
+	
+		 /*css for work order and show work order*/

@@ -1,0 +1,32 @@
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+}
+
+td,th {
+	border: 1px solid #333030;
+	text-align: left;
+	padding: 7px;
+}
+
+tr:nth-child(even) {
+	background-color: #fff;
+}
+
+.custom-combobox {
+	position: relative;
+	display: inline-block;
+}
+
+.custom-combobox-toggle {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-left: -1px;
+	padding: 0;
+}
+
+.custom-combobox-input {
+	margin: 0;
+	padding: 2px 5px;
+}
